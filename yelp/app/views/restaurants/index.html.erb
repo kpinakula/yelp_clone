@@ -6,6 +6,8 @@
       <div><%= restaurant.description %></div>
       <div><%= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant) %></div>
       <div><%= link_to "Delete #{restaurant.name}", restaurant_path(restaurant), method: :delete %></div>
+      <div><%= link_to "Review #{restaurant.name}", new_restaurant_review_path(restaurant) %></div>
+      <!-- Check for reviews and list them -->
     </li>
   <% end %>
   </ul>
